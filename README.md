@@ -1,6 +1,7 @@
 # univiser-spring-microservices-demo
 
 ## Database Diagram
+![Untitled](https://github.com/Chamara-g/univiser-spring-microservices-demo/assets/29547648/3208eaae-be7c-42b4-a89e-6cc3923f36bb)
 
 ### Dev URLs: 
 
