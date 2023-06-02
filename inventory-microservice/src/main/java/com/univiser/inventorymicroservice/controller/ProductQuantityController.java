@@ -29,6 +29,7 @@ public class ProductQuantityController {
     }
 
     @PutMapping("/{id}")
+    //Update product Quantity
     public ResponseEntity<?> update(@RequestBody ProductQuantity productQuantity, @PathVariable String id){
 
         try{

@@ -4,7 +4,6 @@ import com.univiser.inventorymicroservice.model.Product;
 import com.univiser.inventorymicroservice.model.ProductPrice;
 import com.univiser.inventorymicroservice.model.ProductQuantity;
 import com.univiser.inventorymicroservice.model.response.ProductAvailability;
-import com.univiser.inventorymicroservice.model.response.ProductToQuantityMap;
 import com.univiser.inventorymicroservice.service.ProductPriceService;
 import com.univiser.inventorymicroservice.service.ProductQuantityService;
 import com.univiser.inventorymicroservice.service.ProductService;
@@ -51,6 +50,7 @@ public class ProductController {
     }
 
     @GetMapping("/available-products")
+    //Get all available products
     public List<ProductAvailability> getAvailableProducts(){
 
         try{
@@ -67,6 +67,7 @@ public class ProductController {
             ProductQuantity tempProductQuantity;
             ProductPrice tempProductPrice;
 
+            // Combine product to price list
             List<ProductAvailability> productAvailability = new ArrayList<>();
             for (int i = 0; i < products.size(); i++) {
                 tempProduct = products.get(i);
