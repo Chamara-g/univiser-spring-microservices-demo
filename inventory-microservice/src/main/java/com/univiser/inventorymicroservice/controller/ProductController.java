@@ -75,7 +75,7 @@ public class ProductController {
                 tempProductPrice = productPriceMap.get(tempProduct.getProductId());
 
                 // Check if product exist
-                if(tempProductQuantity != null && tempProductPrice != null){
+                if(tempProductQuantity != null && tempProductPrice != null && tempProductQuantity.getCurrentQuantity() > 0){
                     productAvailability.add(new ProductAvailability(
                             tempProduct.getProductId(),
                             tempProduct.getProductName(),
