@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.NoSuchElementException;
 
 @RestController
-@RequestMapping("/api/product-price")
+@RequestMapping("/product-price")
 public class ProductPriceController {
     @Autowired
     private ProductPriceService productPriceService;

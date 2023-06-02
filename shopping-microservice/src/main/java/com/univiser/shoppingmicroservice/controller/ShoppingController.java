@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/shopping")
+@RequestMapping("/shopping")
 public class ShoppingController {
 
     @Autowired

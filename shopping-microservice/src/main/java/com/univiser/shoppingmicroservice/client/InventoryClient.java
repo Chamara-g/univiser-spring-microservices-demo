@@ -9,7 +9,7 @@ import java.util.List;
 @HttpExchange
 public interface InventoryClient {
 
-    @GetExchange("api/product/available-products")
+    @GetExchange("/product/available-products")
     public List<ProductAvailability> getAvailableProducts();
 
 }

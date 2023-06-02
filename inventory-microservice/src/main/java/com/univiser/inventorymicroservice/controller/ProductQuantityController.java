@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.NoSuchElementException;
 
 @RestController
-@RequestMapping("/api/product-quantity")
+@RequestMapping("/product-quantity")
 public class ProductQuantityController {
 
     @Autowired

@@ -21,7 +21,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("api/product")
+@RequestMapping("/product")
 public class ProductController {
 
     @Autowired
